@@ -1,0 +1,29 @@
+--Create a Clothing store database
+
+CREATE TABLE pants (ID integer primary key, Color TEXT,brand TEXT, price INTEGER, aisle INTEGER);
+
+INSERT into pants VALUES (1,"red", "American eagle",10,2);
+INSERT into pants VALUES (2,"blue", "American eagle",10,4);
+INSERT into pants VALUES (3,"red", "American eagle",16,2);
+INSERT into pants VALUES (4,"blue", "American eagle",4,2);
+INSERT into pants VALUES (5,"blue", "American eagle",10,4);
+INSERT into pants VALUES (6,"red", "American eagle",3,2);
+INSERT into pants VALUES (7,"red", "American eagle",10,2);
+INSERT into pants VALUES (8,"red", "American eagle",18,16);
+INSERT into pants VALUES (9,"red", "American eagle",8,2);
+INSERT into pants VALUES (10,"red", "American eagle",22,19);
+INSERT into pants VALUES (11,"blue", "American eagle",1,2);
+INSERT into pants VALUES (12,"blue", "American eagle",14,2);
+INSERT into pants VALUES (13,"red", "American eagle",18,2);
+INSERT into pants VALUES (14,"red", "American eagle",8,2);
+INSERT into pants VALUES (15,"blue", "American eagle",22,22);
+
+--display the database ordered by Aisle. 
+SELECT * FROM pants 
+ORDER BY Aisle;
+
+-what is the SUM(PRICE) of all pants
+SELECT SUM(PRICE) FROM pants;
+
+-What is the price of pants less that 13 ordered by Aisle
+SELECT* From pants where PRiCE>13 ORDER BY aisle;
